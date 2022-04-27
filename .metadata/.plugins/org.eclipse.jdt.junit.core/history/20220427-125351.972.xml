@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ContactsManagementServiceIntegrationTest" project="02_02_project_begin" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.hanselnpetal.service.ContactsManagementServiceIntegrationTest" time="0.281" displayname="ContactsManagementServiceIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:com.hanselnpetal.service.ContactsManagementServiceIntegrationTest]">
+    <testcase name="testAddContactHappyPath" classname="com.hanselnpetal.service.ContactsManagementServiceIntegrationTest" time="0.281" displayname="testAddContactHappyPath()" uniqueid="[engine:junit-jupiter]/[class:com.hanselnpetal.service.ContactsManagementServiceIntegrationTest]/[method:testAddContactHappyPath()]"/>
+  </testsuite>
+</testrun>

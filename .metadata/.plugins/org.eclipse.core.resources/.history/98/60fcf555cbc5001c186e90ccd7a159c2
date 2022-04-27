@@ -1,0 +1,3 @@
+spring.datasource.url = jdbc:mysql://localhost:3306/spring-tdd
+spring.datasource.username = tddshonna
+spring.datasource.password = booth  

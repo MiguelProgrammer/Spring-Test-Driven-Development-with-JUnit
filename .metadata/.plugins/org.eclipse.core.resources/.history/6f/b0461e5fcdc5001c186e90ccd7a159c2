@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: dbc:mysql://localhost:3306/spring-tdd
+    username: root
+    password: admin123  

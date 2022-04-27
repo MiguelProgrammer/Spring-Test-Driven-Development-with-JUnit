@@ -1,0 +1,45 @@
+package com.hanselnpetal.service;
+
+import org.aspectj.lang.annotation.Before;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.MockitoAnnotations;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+
+import com.hanselnpetal.data.repos.CustomerContactRepository;
+import com.hanselnpetal.domain.CustomerContact;
+
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
+public class ContactsManagementServiceUnitTest {
+	
+	private CustomerContactRepository customerContactRepository;
+	
+	
+	private ContactsManagementService contactsManagementService;
+	
+	
+	@Before(value = "")
+    public void setup() {
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void testAddContactHappyPath() {
+		
+		// Create a contact
+		CustomerContact aMockContact = new CustomerContact();
+		aMockContact.setFirstName("Jenny");
+		aMockContact.setLastName("Johnson");
+		
+		//when(customerContactRepository.save(any(CustomerContact.class))).thenReturn(aMockContact);
+				
+		// Save the contact
+		
+		
+		// Verify the save
+		
+	}
+}
