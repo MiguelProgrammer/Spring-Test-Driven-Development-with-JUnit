@@ -38,15 +38,18 @@ public class CustomerContactRepositoryDbUnitTest {
 	@Autowired
 	private CustomerContactRepository customerContactRepository;
 	
+	@SuppressWarnings("deprecation")
 	@Test
     public void testFindByEmail() {
 		
         // Find an inserted record
-        
+        CustomerContact foundContact = customerContactRepository.findByEmail("miguel@gmail.com");
         // Assertion
+        assertThat(foundContact.getEmail(), is (equalTo("miguel@gmail.com")));
         
     }
 	
+	@SuppressWarnings("deprecation")
 	@Test
     public void testFindSpecificContactByIdBypassReposClass() {
 		

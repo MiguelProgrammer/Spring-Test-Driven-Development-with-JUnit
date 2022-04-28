@@ -9,7 +9,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name="delivery_address")
 public class DeliveryAddress {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
+	
 	private String line1;
 	private String line2;
 	private String city;
