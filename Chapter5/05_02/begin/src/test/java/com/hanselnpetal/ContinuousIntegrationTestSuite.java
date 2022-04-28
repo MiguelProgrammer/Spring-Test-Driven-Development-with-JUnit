@@ -8,7 +8,7 @@ import com.hanselnpetal.data.repos.CustomerContactRepositoryIntegrationTest;
 import com.hanselnpetal.service.ContactsManagementServiceIntegrationTest;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses ({  })
+@Suite.SuiteClasses ({DatastoreSystemsHealthTest.class, ContactsManagementControllerIntegrationTest.class  })
 
 public class ContinuousIntegrationTestSuite {
 

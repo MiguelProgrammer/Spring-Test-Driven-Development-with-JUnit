@@ -9,7 +9,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name="delivery_address")
 public class DeliveryAddress {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String line1;
 	private String line2;
 	private String city;
@@ -17,8 +21,6 @@ public class DeliveryAddress {
 	private String zipCode;
 	
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}

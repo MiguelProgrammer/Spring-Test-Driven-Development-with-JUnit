@@ -25,8 +25,8 @@ public class ContactsManagementControllerIntegrationTest {
 	public void testAddContactHappyPath() {
 		
 		CustomerContact aContact = new CustomerContact();
-		aContact.setFirstName("Jenny");
-		aContact.setLastName("Johnson");
+		aContact.setFirstName("Miguel");
+		aContact.setLastName("Pereira da Silva");
 		
 		// POST our CustomerContact form bean to the controller; check the outcome
 		String outcome = contactsManagementController.processAddContactSubmit(aContact);

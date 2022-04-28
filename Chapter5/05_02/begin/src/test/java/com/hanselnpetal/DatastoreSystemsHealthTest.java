@@ -31,7 +31,7 @@ public class DatastoreSystemsHealthTest {
 			String catalogName = dataSource.getConnection().getCatalog();
 			
 			assertThat(metadata, is(notNullValue()));
-			assertThat(catalogName, is(equalTo("spring-tdd")));
+			assertThat(catalogName, is(equalTo("spring_tdd")));
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

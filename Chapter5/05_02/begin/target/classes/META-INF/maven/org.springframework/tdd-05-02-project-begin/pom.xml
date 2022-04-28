@@ -7,11 +7,12 @@
     <artifactId>tdd-05-02-project-begin</artifactId>
     <version>0.1.0</version>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.3.RELEASE</version>
-    </parent>
+     <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.12</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
 
     <dependencies>
         <dependency>
@@ -50,7 +51,7 @@
     </dependencies>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>16</java.version>
     </properties>
 
     <build>

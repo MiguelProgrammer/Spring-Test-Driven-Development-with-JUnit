@@ -9,8 +9,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name="customer_contact")
 public class CustomerContact {
-	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -24,8 +27,6 @@ public class CustomerContact {
 		
 	}
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
